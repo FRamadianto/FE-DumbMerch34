@@ -29,7 +29,7 @@ export default function ComplainAdmin() {
     const [state] = useContext(UserContext)
 
     useEffect(() =>{
-        socket = io("https://backend34.herokuapp.com/" || 'http://localhost:5000', {//ketika dimounting akan mengisikan socket dan memunculkan
+        socket = io("https://backendfikri34.herokuapp.com/" || 'http://localhost:5000', {//ketika dimounting akan mengisikan socket dan memunculkan
             auth: {                           //client connect
                 token: localStorage.getItem('token')//kirim ke backend line 17
             },
